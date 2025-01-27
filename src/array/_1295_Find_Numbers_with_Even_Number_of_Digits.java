@@ -5,10 +5,8 @@ public class _1295_Find_Numbers_with_Even_Number_of_Digits {
     //https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/
     public int findNumbers(int[] nums) {
         int sumEvenDigits = 0;
-        for(int i = 0; i < nums.length; i++){
-            if(countDigitNumber(nums[i])%2 == 0){
-                sumEvenDigits++;
-            }
+        for(int num : nums) {
+            if(countDigitNumber(num) % 2 == 0) sumEvenDigits++;
         }
         return sumEvenDigits;
     }
